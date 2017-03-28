@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@if (string.IsNullOrEmpty(ViewBag.Comment)) { 
+    @: Envie o seu comentário:
+    <form>
+        Comentário <br />
+        <textarea rows="10" name="comment"></textarea>
+        <br />
+        <input type="submit" value="Enviar" />
+    </form>
+}else{
+    @ViewBag.Comment
+}

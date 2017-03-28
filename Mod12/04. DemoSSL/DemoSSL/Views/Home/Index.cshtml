@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+Olá
+@if (User.Identity.IsAuthenticated)
+{
+    @User.Identity.Name
+}else{
+    @:Anonimo, efetue o login
+    <a href="@Url.Action("Login","Conta")">aqui</a>
+}

@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Olá</h2>
+
+@if (string.IsNullOrEmpty(ViewBag.Msg))
+{
+    <p>
+        Efetue seu cadastro
+        <a href="@Url.Action("Cadastro")">Aqui</a>
+    </p>
+}else{
+    <strong>@ViewBag.Msg</strong>
+}

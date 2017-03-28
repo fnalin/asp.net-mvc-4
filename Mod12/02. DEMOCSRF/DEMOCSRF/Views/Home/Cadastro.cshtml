@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Cadastro";
+}
+
+<h2>Usuário</h2>
+
+<form method="post">
+    @Html.AntiForgeryToken()
+    <div>
+        <label>Usuário</label>
+        <br>
+        <input type="text" name="usuario" />
+    </div>
+    <div>
+        <label>Senha</label>
+        <br>
+        <input type="password" name="senha" />
+    </div>
+    <input type="submit" value="Enviar" />
+</form>

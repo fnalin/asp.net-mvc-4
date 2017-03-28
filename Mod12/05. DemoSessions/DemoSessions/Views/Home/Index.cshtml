@@ -1,0 +1,42 @@
+﻿@using DemoSessions.Models;
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Clientes</h2>
+
+@if (TempData["msg"] != null)
+{ 
+    <div>
+        <strong>
+            @TempData["msg"]
+        </strong>
+    </div>
+}
+<br />
+@Html.ActionLink("Novo Cliente", "Adicionar")
+<br />
+<table>
+    <tbody>
+        <tr>
+            <td>ID</td>
+            <td>Nome</td>
+        </tr>
+    </tbody>
+    <tbody>
+        @if (Session["clientes"] != null)
+        {
+            foreach (Cliente cliente in (IList<Cliente>)Session["clientes"])
+            {
+            <tr>
+                <td>
+                    @cliente.Id
+                </td>
+                <td>
+                    @cliente.Nome
+                </td>
+            </tr>
+            }
+        }
+    </tbody>
+</table>

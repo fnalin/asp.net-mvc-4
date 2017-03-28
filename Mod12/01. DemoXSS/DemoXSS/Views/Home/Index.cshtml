@@ -1,0 +1,20 @@
+﻿@using Microsoft.Security.Application
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div id="msg"></div>
+
+@section scripts{
+    @if (!string.IsNullOrWhiteSpace(ViewBag.Msg))
+    {
+        
+        <script>
+            $("#msg").html('@Encoder.JavaScriptEncode(ViewBag.Msg)');
+            $("#msg").html('@Ajax.JavaScriptStringEncode(ViewBag.Msg)');
+        </script>
+    }
+}
