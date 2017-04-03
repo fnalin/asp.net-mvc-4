@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="411c8ffc-80d4-4723-8aeb-b0d711addff0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://demoazurewcf.azurewebsites.net/Clientes.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Clientes.wsdl" MetadataType="Wsdl" ID="7589bc62-f7b6-477f-b86b-be6c0bcb470b" SourceId="1" SourceUrl="http://demoazurewcf.azurewebsites.net/Clientes.svc?wsdl" />
+    <MetadataFile FileName="Clientes.xsd" MetadataType="Schema" ID="1ae390e7-443e-497f-84c7-8d2cd632edaf" SourceId="1" SourceUrl="http://demoazurewcf.azurewebsites.net/Clientes.svc?xsd=xsd2" />
+    <MetadataFile FileName="Clientes.disco" MetadataType="Disco" ID="f8a7df44-dbd5-44cf-9652-cacb261a7bde" SourceId="1" SourceUrl="http://demoazurewcf.azurewebsites.net/Clientes.svc?disco" />
+    <MetadataFile FileName="Clientes1.xsd" MetadataType="Schema" ID="46c81a28-1194-41b7-ab58-a5f4ff3268cd" SourceId="1" SourceUrl="http://demoazurewcf.azurewebsites.net/Clientes.svc?xsd=xsd1" />
+    <MetadataFile FileName="Clientes2.xsd" MetadataType="Schema" ID="2cec6cc3-443e-421a-a338-be8398003b8d" SourceId="1" SourceUrl="http://demoazurewcf.azurewebsites.net/Clientes.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
